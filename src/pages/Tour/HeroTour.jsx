@@ -26,7 +26,7 @@ const HeroTour = () => {
                   fontWeight: "bolder",
                 }}
               >
-                Do More With Travely
+                Do More With InTourNeT
               </h2>
               <div>
                 <div className="mt-12 w-1/2 mr-auto ml-auto">

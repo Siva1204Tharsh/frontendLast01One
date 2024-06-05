@@ -241,9 +241,7 @@ const UpdateuserA = () => {
                     <option value="hotelOwner" className="text-gray-900">
                       Hotel Owner
                     </option>
-                    <option value="vehicleOwner" className="text-gray-900">
-                      Vehicle Owner
-                    </option>
+
                     <option value="restaurantOwner" className="text-gray-900">
                       Restaurant Owner
                     </option>
