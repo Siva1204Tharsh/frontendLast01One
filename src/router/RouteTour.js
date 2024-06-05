@@ -3,9 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Admin from "../pages/Admin";
-import VehicleHome from "../pages/vehicle/VehicleHome";
-import VehicleBook from "../pages/vehicle/VehicleBook";
-import VehiclePayment from "../pages/vehicle/VehiclePayment";
+
 import Register from "../pages/Register";
 import Userlist from "../pages/Userlist";
 import ToursHome from "../pages/Tour/Home";
@@ -20,12 +18,9 @@ import {
   hotelColumns,
   tourColumns,
   tourReservationColumns,
-  trainColumns,
   userColumns,
-  vehicleColumns,
-  vehicleReservationColumns,
 } from "../components/datatable/datatablesource";
-import Vehiclelist from "../pages/Vehiclelist";
+
 import Activity from "../pages/special_activity/Activity";
 import PendingActivities from "../pages/special_activity/PendingActivities";
 import FilterActivities from "../pages/special_activity/FilterActivities";
@@ -38,41 +33,25 @@ import UpdateuserA from "../pages/UpdateuserA";
 import Profile from "../pages/Profile";
 import Profileupdate from "../pages/Profileupdate";
 
-import TrainHome from "../pages/train/TrainHome";
-import TrainBook from "../pages/train/TrainBook";
-import AddNewTrain from "../pages/train/AddNewTrain";
-import TrainHomeAdmmin from "../pages/train/TrainHomeAdmin";
-import SingleTrainView from "../pages/train/SingleTrainView";
-import AddPassengerDetails from "../pages/train/AddPassengerDetails";
-import DoUpdateTrain from "../pages/train/DoUpdateTrain";
-
 import Adduser from "../pages/Adduser";
 import { HotelHome } from "../pages/hotel/HotelHome";
 import AddHotel from "../pages/hotel/AddHotel";
 import { AddRoom } from "../pages/hotel/AddRoom";
 import UpdateHotel from "../pages/hotel/UpdateHotel";
-import AddVehicle from "../pages/vehicle/AddVehicle";
-import EditVehicle from "../pages/vehicle/EditVehicle";
+
 import HotelView from "../components/hotel/HotelView";
 import HotelOverView from "../components/hotel/HotelOverview";
-import VehicleView from "../pages/vehicle/VehicleView";
 
 import RestaurentForm from "../pages/Restaturant/RestaurantForm";
 import HadminView from "../pages/hotel/HadminView";
 import HotelReserve from "../components/hotel/HotelReserve";
 import Hotellist from "../pages/Hotellist";
 import Tourlist from "../pages/Tourlist";
-import Trainlist from "../pages/Trainlist";
+
 import ContactUs from "../pages/ContactUs";
 import HotelBook from "../pages/hotel/HotelBook";
 import ResetPassword from "../pages/ResetPassword";
 import Tourreservations from "../pages/Tourreservations";
-import Vehiclereservation from "../pages/Vehiclereservation";
-import ReviewTickets from "../pages/train/ReviewTickets";
-import ReviewPanel from "../pages/train/ReviewPanel";
-import MyTickets from "../pages/train/MyTickets";
-import MyOneTicket from "../pages/train/MyOneTicket";
-import TravelerHome from "../pages/train/TravelerHome";
 
 import { Main } from "../pages/Main";
 import Refund from "../components/Refund";
@@ -141,30 +120,6 @@ const RouteTour = () => {
           </ProtectedRoute>
         }
       />
-      <Route
-        path="/train"
-        element={
-          <ProtectedRoute>
-            <Trainlist columns={trainColumns} />
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/vehicle"
-        element={
-          <ProtectedRoute>
-            <Vehiclelist columns={vehicleColumns} />
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/vehiclereservation"
-        element={
-          <ProtectedRoute>
-            <Vehiclereservation columns={vehicleReservationColumns} />
-          </ProtectedRoute>
-        }
-      />
 
       <Route path="/userpage" element={<UserpageA />} />
       <Route path="/update" element={<UpdateuserA />} />
@@ -172,15 +127,6 @@ const RouteTour = () => {
       <Route path="/updateProfile" element={<Profileupdate />} />
       <Route path="/adduser" element={<Adduser />} />
 
-      {/* Yasiru Deshan  */}
-      <Route path="/vehicles" element={<VehicleHome />} />
-      <Route path="/vehicle/book/:id" element={<VehicleBook />} />
-      <Route path="/vehicle/payment/" element={<VehiclePayment />} />
-      <Route path="/vehicle/add" element={<AddVehicle />} />
-      <Route path="/vehicle/edit/:id" element={<EditVehicle />} />
-      <Route path="/vehicle/view/" element={<VehicleView />} />
-
-      {/* //ishara */}
       <Route path="/tours/home" element={<ToursHome />} />
       <Route path="/tours/:id" element={<TourDetails />} />
       <Route
@@ -200,7 +146,6 @@ const RouteTour = () => {
 
       <Route path="/contactus" element={<ContactUs />} />
 
-      {/* Hansika */}
       <Route path="/add-new-activity" element={<ActivityForm />} />
       <Route path="/add-new-activity/:id" element={<ActivityForm />} />
       <Route path="/pending-activities" element={<PendingActivities />} />
@@ -213,34 +158,8 @@ const RouteTour = () => {
       <Route path="/my-activities" element={<MyActivities />} />
       <Route path="/my-reservations" element={<ReservationPage />} />
 
-      {/*sehan*/}
-
-      <Route path="/train/book/:id" element={<TrainBook />} />
-      <Route path="/admintrain/add" element={<AddNewTrain />} />
-      <Route path="/adminTrain" element={<TrainHomeAdmmin />} />
-      <Route path="/adminTrain/:id" element={<SingleTrainView />} />
-      <Route path="/passengerDet" element={<AddPassengerDetails />} />
-      <Route path="/train/book/:id" element={<TrainBook />} />
-      <Route path="/train/update/:id" element={<DoUpdateTrain />} />
-      <Route path="/TrainHome" element={<TravelerHome />} />
-      <Route path="/adminTrain/reviewTicket/:id" element={<ReviewTickets />} />
-      <Route path="/adminTrain/reviewPanel" element={<ReviewPanel />} />
-      <Route path="/train/MyTickets" element={<MyTickets />} />
-      <Route path="/train/MyTickets/:id" element={<MyOneTicket />} />
-
-      {/* navindi */}
       <Route path="/addrestaurant" element={<RestaurentForm />} />
 
-      <Route path="/train/book/:id" element={<TrainBook />} />
-      <Route path="/train/add" element={<AddNewTrain />} />
-      <Route path="/adminTrain" element={<TrainHomeAdmmin />} />
-      <Route path="/adminTrain/:id" element={<SingleTrainView />} />
-      <Route
-        path="/train/book/passengerDet"
-        element={<AddPassengerDetails />}
-      />
-
-      {/* chamith */}
       <Route path="/hotelhome" element={<HotelHome />} />
       <Route path="/hotels/new" element={<AddHotel />} />
       <Route path="/rooms/new/:id" element={<AddRoom />} />
@@ -251,10 +170,8 @@ const RouteTour = () => {
       <Route path="/hotelreserve/:id" element={<HotelReserve />} />
       <Route path="/hotelbooking" element={<HotelBook />} />
 
-      {/* Navindi */}
       <Route path="/addrestaurants" element={<RestaurentForm />} />
 
-      {/*Dinidu*/}
       <Route path="/finance" element={<Main />} />
       <Route path="/finance/salary" element={<SalaryCalculation />} />
       <Route path="/finance/employee" element={<EmployeeList />} />

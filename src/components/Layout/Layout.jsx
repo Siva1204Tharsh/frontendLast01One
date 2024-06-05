@@ -16,8 +16,6 @@ const Layout = () => {
     location.pathname === "/users" ||
     location.pathname === "/hotels" ||
     location.pathname === "/tours" ||
-    location.pathname === "/vehicle" ||
-    location.pathname === "/train" ||
     location.pathname === "/adduser" ||
     location.pathname === "/userpage" ||
     location.pathname === "/update";

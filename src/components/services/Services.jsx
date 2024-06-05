@@ -15,14 +15,6 @@ const categories = [
     icon: <MdTour />,
   },
   {
-    name: "Vehicle Reservation",
-    icon: <AiFillCar />,
-  },
-  {
-    name: "Train Reservation",
-    icon: <FaTrain />,
-  },
-  {
     name: "Restaurent Reservation",
     icon: <BiRestaurant />,
   },
