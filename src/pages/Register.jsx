@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import DriveFolderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUploadOutlined";
 import Swal from "sweetalert2";
-import backgroundImage from "../assets/images/bg.jpg";
+
 import Spinner from "../components/spinner/LoadingSpinner";
 
 const Register = () => {
@@ -152,7 +152,8 @@ const Register = () => {
   return (
     <div
       style={{
-        backgroundImage: `url(${backgroundImage})`,
+        // backgroundImage: `url(${backgroundImage})`,
+        backgroundColor: "#F0F8FF",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -247,7 +248,7 @@ const Register = () => {
                 >
                   <option value="traveler">Traveler</option>
                   <option value="hotelOwner">Hotel Owner</option>
-                  <option value="vehicleOwner">Vehicle Owner</option>
+
                   <option value="resturentOwner">Resturent Owner</option>
                   <option value="tourGuide">Tour Guide</option>
                   <option value="eventOrganizer">Event Organizer</option>

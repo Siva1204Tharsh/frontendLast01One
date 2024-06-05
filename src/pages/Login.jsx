@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/authContext";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
-import backgroundImage from "../assets/images/bg.jpg";
 import Spinner from "../components/spinner/LoadingSpinner";
 
 const Login = () => {
@@ -56,7 +55,8 @@ const Login = () => {
   return (
     <div
       style={{
-        backgroundImage: `url(${backgroundImage})`,
+        // backgroundImage: `url(${backgroundImage})`,
+        backgroundColor: "#F0F8FF",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
