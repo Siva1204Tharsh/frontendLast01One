@@ -29,7 +29,7 @@ const Footer = () => {
           <ul className="mt-2 font-light">
             <li className="py-2 text-sm">Hotels</li>
             <li className="py-2 text-sm">Tour Packages</li>
-            <li className="py-2 text-sm">Vehicles</li>
+            <li className="py-2 text-sm">Guide</li>
             <li className="py-2 text-sm">Restaurants</li>
             <li className="py-2 text-sm">Events</li>
           </ul>
