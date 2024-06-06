@@ -21,7 +21,7 @@ const Hero2 = () => {
           </div>
           <div class="">
             <img
-              src="https://img.freepik.com/premium-photo/palm-tree-jungle-philippines-concept-about-wanderlust-tropical-travels-swinging-river-people-having-fun_186382-1220.jpg?w=1060"
+              src="https://info.ehl.edu/hubfs/Nine%20Arch%20Bridge%20Sri%20Lanka.jpg"
               alt="heroimg"
               class="rounded-3xl h-[100%] w-full object-cover"
             />
