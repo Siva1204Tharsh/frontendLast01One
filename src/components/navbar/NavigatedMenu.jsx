@@ -32,6 +32,7 @@ const NavigatedMenu = () => {
           >
             Tour Packages
           </Link>
+          
         </li>
         <li>
           <AiOutlineRight className="mt-1 mx-2" />
