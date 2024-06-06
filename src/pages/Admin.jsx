@@ -114,7 +114,7 @@ const Admin = () => {
     >
       <div className="md:px-20 md:pt-20 md:pb-48 p-5 pb-20">
         <h1 className="text-center text-[#41A4FF] text-3xl font-bold ">
-          Traverly Admin
+          InTourNeT Admin
         </h1>
         <h1 className="text-center text-lg pb-5">{user.name}</h1>
 
@@ -141,19 +141,7 @@ const Admin = () => {
 
         <div className="flex flex-row col-span-3 lg:px-32 px-8 pt-8 justify-between items-stretch gap-10">
           <Link
-            to="/vehicle"
-            className="p-10 flex-1 hover:bg-[#41A4FF] hover:text-2xl transition duration-300 ease-in-out hover:text-white rounded-lg font-bold shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
-          >
-            Vehicle Management
-          </Link>
-          <Link
-            to="/train"
-            className="p-10 flex-1 hover:bg-[#41A4FF] hover:text-2xl transition duration-300 ease-in-out hover:text-white rounded-lg font-bold shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
-          >
-            Train Management
-          </Link>
-          <Link
-            to=""
+            to="/restaurant"
             className="p-10 flex-1 hover:bg-[#41A4FF] hover:text-2xl transition duration-300 ease-in-out hover:text-white rounded-lg font-bold shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
           >
             Restaurant Management
@@ -167,12 +155,7 @@ const Admin = () => {
           >
             Event Management
           </Link>
-          <Link
-            to=""
-            className="p-10 flex-1 hover:bg-[#41A4FF] hover:text-2xl transition duration-300 ease-in-out hover:text-white rounded-lg font-bold shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
-          >
-            Reservation Management
-          </Link>
+
           <Link
             to=""
             className="p-10 flex-1 hover:bg-[#41A4FF] hover:text-2xl transition duration-300 ease-in-out hover:text-white rounded-lg font-bold shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
