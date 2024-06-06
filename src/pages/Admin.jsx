@@ -67,8 +67,6 @@ const data = [
 const data2 = [
   { name: "Users", value: 800 },
   { name: "Hotels", value: 300 },
-  { name: "Vehicles", value: 300 },
-  { name: "Tours", value: 200 },
 ];
 
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
