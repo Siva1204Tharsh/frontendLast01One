@@ -11,8 +11,7 @@ import { AuthContext } from "../../context/authContext";
 
 export const HotelHome = () => {
   const location = useLocation();
-  const {data, date} = location.state ?? {};
-  
+  const { data, date } = location.state ?? {};
 
   return (
     <div>
@@ -20,21 +19,18 @@ export const HotelHome = () => {
       <HotelSearchBar />
       {data?.map((item) => (
         <SearchCard
-        name={item.name}
-        city={item.city}
-        cheapestPrice={item.cheapestPrice}
-        HotelImg={item.HotelImg}
-        _id= {item._id}
-        date={date}
+          name={item.name}
+          city={item.city}
+          cheapestPrice={item.cheapestPrice}
+          HotelImg={item.HotelImg}
+          _id={item._id}
+          date={date}
         />
-      
-        
       ))}
       <h1 className="ml-10 mt-5  md:text-2xl  font-bold   text-[#272727]">
         Hotels guests love
       </h1>
       <HotelCard />
-      
     </div>
   );
 };
