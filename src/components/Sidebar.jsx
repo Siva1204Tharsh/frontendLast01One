@@ -17,7 +17,7 @@ const Sidebar = () => {
 </div>
 
       <div className='flex items-center pt-2 text-[17px] font-bold ' >
-        <h1>Dinidu Ekanayaka</h1>
+        <h1>Shamini</h1>
       </div>
         <div className=' text-sm' >
         <h1>Finance manager</h1>
