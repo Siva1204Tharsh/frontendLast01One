@@ -46,14 +46,12 @@ const Userlist = ({ columns }) => {
 
     doc.setFontSize(20).setTextColor(65, 164, 255); // set font size and blue color
     doc.setFont("helvetica", "bold");
-    doc.text("Traverly", 14, 15); // add heading
+    doc.text("InTourNeT", 14, 15); // add heading
     doc.setFont("helvetica", "normal");
     doc.setFontSize(10).setTextColor(0, 0, 0); // reset font size and color
     doc.text("User Details Report", 14, 23);
     doc.text(`Report Generated Date: ${dateStr}`, 14, 30);
-    doc
-      .text("Traverly.co,Whihara mavatha,Kaduwela,Sri lanka", 14, 37)
-      .setFontSize(10);
+    doc.text("InTourNet.co,Manipay,Jaffna,Sri lanka", 14, 37).setFontSize(10);
 
     doc.autoTable(tableColumn, tableRows, {
       styles: { fontSize: 7 },
