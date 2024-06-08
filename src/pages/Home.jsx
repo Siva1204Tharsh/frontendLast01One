@@ -6,13 +6,14 @@ import Aboutus from "../components/aboutus/Aboutus";
 import Hero2 from "../components/hero2/Hero2";
 import Services from "../components/services/Services";
 import Hero3 from "../components/hero2/Hero3";
+import Hero01 from "../components/hero2/Hero01";
 
 const Home = () => {
   // const { user } = useContext(AuthContext);
 
   return (
     <div>
-      <Hero2 />
+      <Hero01 />
       <Aboutus />
       <Services />
       <Hero3 />
