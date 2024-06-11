@@ -2,10 +2,10 @@ import React from "react";
 
 const Hero01 = () => {
   return (
-    <div class="bg-white dark:bg-gray-800 overflow-hidden relative lg:flex lg:items-center">
+    <div class="bg-gradient-to-r from-gray-100 via-[#8FBC8F] to-gray-100 dark:bg-gray-800 overflow-hidden relative lg:flex lg:items-center">
       <div class="w-full py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
         <h2 class="text-3xl font-extrabold text-black dark:text-white sm:text-4xl">
-          <span class="block">Mother hearth host your travel</span>
+          <span class="block">Explore the Wonders in Sri Lanka</span>
         </h2>
         <p class="text-md mt-4 text-gray-400">
           The state of Utah in the united states is home to lots of beautiful
@@ -35,7 +35,11 @@ const Hero01 = () => {
             class="mb-8 rounded-lg"
             alt="Tree"
           />
-          <img src="https://wallpapersmug.com/large/a9b08f/mountains-stream-river-nature-landscape.jpg" class="rounded-lg" alt="Tree" />
+          <img
+            src="https://wallpapersmug.com/large/a9b08f/mountains-stream-river-nature-landscape.jpg"
+            class="rounded-lg"
+            alt="Tree"
+          />
         </div>
       </div>
     </div>

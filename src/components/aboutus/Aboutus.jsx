@@ -3,7 +3,7 @@ import React from "react";
 const Aboutus = () => {
   return (
     <>
-      <div className="lg:px-36 md:py-5 px-5">
+      <div className=" bg-gradient-to-r from-gray-100 via-[#8FBC8F] to-gray-100 lg:px-36 md:py-5 px-5">
         <div className="container mx-auto">
           <div className="-mx-4 flex flex-wrap items-center justify-between">
             <div className="w-full lg:w-6/12">

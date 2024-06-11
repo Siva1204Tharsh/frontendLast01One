@@ -3,7 +3,6 @@ import React from "react";
 // import { AuthContext } from "../context/authContext";
 
 import Aboutus from "../components/aboutus/Aboutus";
-import Hero2 from "../components/hero2/Hero2";
 import Services from "../components/services/Services";
 import Hero3 from "../components/hero2/Hero3";
 import Hero01 from "../components/hero2/Hero01";

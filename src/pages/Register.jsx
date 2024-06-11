@@ -150,15 +150,7 @@ const Register = () => {
   };
 
   return (
-    <div
-      style={{
-        // backgroundImage: `url(${backgroundImage})`,
-        backgroundColor: "#F0F8FF",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
+    <div className="bg-gradient-to-r from-gray-100 via-[#8FBC8F] to-gray-100">
       <div className="py-10 lg:py-20 px-16 lg:px-96 md:px-64 flex flex-col text-center">
         <div className="mb-8 text-center">
           <h2 className="text-5xl font-bold">SIGN UP</h2>
@@ -246,7 +238,7 @@ const Register = () => {
                   onChange={(e) => setType(e.target.value)}
                   className="block text-base bordder-[#E9EDF4] border appearance-none w-full py-3 px-5   bg-[#FCFDFE] rounded-3xl  border-slate-300 focus:outline-none focus:ring"
                 >
-                  <option value="traveler">Traveler</option>
+                  <option value="traveler">Tourist</option>
                   <option value="hotelOwner">Hotel Owner</option>
 
                   <option value="resturentOwner">Resturent Owner</option>
@@ -297,7 +289,7 @@ const Register = () => {
         {loading2 && <Spinner />}
 
         <div className="flex flex-col justify-center text-center pb-20">
-          <p className="text-base text-[#adadad]">
+          <p className="text-base text-[#000000]">
             Already a member yet?
             <Link
               to="/login"

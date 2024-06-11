@@ -53,15 +53,7 @@ const Login = () => {
   };
 
   return (
-    <div
-      style={{
-        // backgroundImage: `url(${backgroundImage})`,
-        backgroundColor: "#F0F8FF",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
+    <div className="bg-gradient-to-r from-gray-100 via-[#8FBC8F] to-gray-100">
       <div className="py-32 lg:py-32">
         <div className="container mx-auto">
           <div className="-mx-4 flex flex-wrap">
@@ -109,7 +101,7 @@ const Login = () => {
                 >
                   Forget Password?
                 </Link>
-                <p className="text-base text-[#adadad]">
+                <p className="text-base text-[#000000]">
                   Not a member yet?
                   <Link
                     to="/register"
