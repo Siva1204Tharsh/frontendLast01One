@@ -26,7 +26,7 @@ const categories = [
 const Services = () => {
   return (
     <>
-      <div class="lg:px-36 lg:pt-5 lg:pb-[90px]">
+      <div class="bg-gradient-to-r from-gray-100 via-[#8FBC8F] to-gray-100 lg:px-36 lg:pt-5 lg:pb-[90px]">
         <div class="container mx-auto">
           <div class="-mx-4 flex flex-wrap">
             <div class="w-full px-4">
