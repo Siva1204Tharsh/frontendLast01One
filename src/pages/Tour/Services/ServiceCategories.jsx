@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const ServiceCategories = () => {
   return (
-    <div className="bg-white ">
+    <div className="bg-[#F5F5F5] ">
       <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
         {tourCategoris.map((tours) => (
           <Link to={`/${tours.links}`}>

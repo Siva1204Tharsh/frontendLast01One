@@ -17,11 +17,6 @@ const inside_nav = [
     path: "/tours/home",
     display: "Tour Packages",
   },
-
-  {
-    path: "/Restaurants",
-    display: "Restaurants",
-  },
   {
     path: "/events",
     display: "Events",
@@ -50,21 +45,19 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="flex justify-around w-full py-4 bg-gradient-to-r from-gray-100 via-[#8FBC8F] to-gray-100 sticky top-0 z-[999]">
+    <nav className="flex justify-around w-full py-4 bg-[#F5F5F5]  sticky top-0 z-[999]">
       <div className="flex items-center">
-        <h3 className="text-2xl font-bold text-[#000000] animate-bounce">
-          InTourNeT
-        </h3>
+        <h3 className="text-2xl font-bold text-[#008080]">InTourNeT</h3>
       </div>
       {/* <!-- left header section --> */}
-      <div className="items-center hidden space-x-5 md:flex">
+      <div className="items-center hidden space-x-5 md:flex text-[#008080] font-bold">
         <Link to="/">Home</Link>
         <Menu as="div" className="relative inline-block text-left">
           <div>
             <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md px-3 py-2">
               Reservations
               <ChevronDownIcon
-                className="-mr-1 mt-1 h-5 w-5 text-[#000000]-400"
+                className="-mr-1 mt-1 h-5 w-5 text-[#008080]-400"
                 aria-hidden="true"
               />
             </Menu.Button>
@@ -172,7 +165,7 @@ const Navbar = () => {
           <>
             <Link
               to="/login"
-              className="px-4 py-2 text-white font-bold bg-[#41A4FF] text-center hover:bg-blue-500 cursor-pointer rounded-md"
+              className="px-4 py-2 text-white font-bold bg-[#008080] text-center hover:bg-[#008080]-200 cursor-pointer rounded-md"
             >
               Sign in
             </Link>
@@ -199,8 +192,8 @@ const Navbar = () => {
             : "fixed left-[-100%]"
         }
       >
-        <h1 className="text-2xl font-medium text-blue-500 m-8">InTourNeT</h1>
-        <ul className="p-4 mt-20">
+        <h1 className="text-2xl font-medium text-[#008080] m-8">InTourNeT</h1>
+        <ul className="p-4 mt-20 text-[#008080]">
           <li className="p-4 border-b border-gray-600">
             <Link to="/">Home</Link>
           </li>
@@ -323,7 +316,7 @@ const Navbar = () => {
               <li className="p-4 mt-8">
                 <Link
                   to="/login"
-                  className="px-3 py-2 text-sm text-white font-bold bg-[#41A4FF] text-center hover:bg-blue-500 cursor-pointer rounded-md"
+                  className="px-3 py-2 text-sm text-white font-bold bg-[#008080] text-center hover:bg-[#008080]-500 cursor-pointer rounded-md"
                 >
                   Sign in
                 </Link>

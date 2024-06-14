@@ -20,7 +20,7 @@ const HeroTour = () => {
           <div class="flex h-full items-center justify-center text-center">
             <div>
               <h2
-                class="mb-5  text-6xl font-bold text-black "
+                class="mb-5  text-6xl font-bold text-[#008080] "
                 style={{
                   fontFamily: "Poppins, sans-serif",
                   fontWeight: "bolder",
@@ -31,7 +31,7 @@ const HeroTour = () => {
               <div>
                 <div className="mt-12 w-1/2 mr-auto ml-auto">
                   <h4
-                    class="mt-5 mb-6 text-xl  uppercase animate-bounce text-white text-center"
+                    class="mt-5 mb-6 text-xl  uppercase animate-bounce text-black text-center"
                     style={{
                       fontFamily: "Poppins, sans-serif",
                       fontWeight: "normal",

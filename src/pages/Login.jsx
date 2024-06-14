@@ -53,14 +53,14 @@ const Login = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-gray-100 via-[#8FBC8F] to-gray-100">
+    <div className="bg-[#F5F5F5] ">
       <div className="py-32 lg:py-32">
         <div className="container mx-auto">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="relative mx-auto mt-[-5rem] max-w-[525px] overflow-hidden bg-transparent py-16 px-10 text-center sm:px-12 md:px-[60px]">
                 <div className="mb-10 text-center md:mb-16">
-                  <h2 className="text-5xl font-bold">LOGIN</h2>
+                  <h2 className="text-5xl font-bold text-[#008080]">LOGIN</h2>
                 </div>
                 <form>
                   <div className="mb-6">
@@ -87,7 +87,7 @@ const Login = () => {
                     <button
                       disabled={loading}
                       onClick={handleClick}
-                      className="w-full cursor-pointer rounded-3xl font-bold bg-[#41A4FF] text-center hover:bg-gray-600 py-3 px-5 text-white transition hover:bg-opacity-90"
+                      className="w-full cursor-pointer rounded-3xl font-bold bg-[#008080] text-center hover:bg-gray-600 py-3 px-5 text-white transition hover:bg-opacity-90"
                     >
                       Sign In
                     </button>
@@ -105,7 +105,7 @@ const Login = () => {
                   Not a member yet?
                   <Link
                     to="/register"
-                    className="text-primary cursor-pointer hover:underline ms-2 font-bold"
+                    className=" cursor-pointer hover:underline ms-2 font-bold text-[#008080]"
                   >
                     Sign Up
                   </Link>

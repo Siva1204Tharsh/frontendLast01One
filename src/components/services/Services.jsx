@@ -1,45 +1,42 @@
 import React from "react";
-import { FaHotel, FaTrain } from "react-icons/fa";
+import { FaHotel } from "react-icons/fa";
 import { MdTour } from "react-icons/md";
-import { AiFillCar } from "react-icons/ai";
-import { BiRestaurant } from "react-icons/bi";
+
 import { BsCalendarEvent } from "react-icons/bs";
 
 const categories = [
   {
-    name: "Hotel Reservation",
+    name: "Hotels",
     icon: <FaHotel />,
   },
   {
-    name: "Tour Package Reservation",
+    name: "Tour Packages",
     icon: <MdTour />,
   },
+
   {
-    name: "Restaurent Reservation",
-    icon: <BiRestaurant />,
-  },
-  {
-    name: "Event Reservation",
+    name: "Events",
     icon: <BsCalendarEvent />,
   },
 ];
 const Services = () => {
   return (
     <>
-      <div class="bg-gradient-to-r from-gray-100 via-[#8FBC8F] to-gray-100 lg:px-36 lg:pt-5 lg:pb-[90px]">
+      <div class="bg-[#F5F5F5] lg:px-36 lg:pt-5 lg:pb-[90px]">
         <div class="container mx-auto">
           <div class="-mx-4 flex flex-wrap">
             <div class="w-full px-4">
               <div class="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
-                <span class="text-primary mb-2 block text-lg font-semibold">
+                <span class="text-[#008080] mb-2 block text-lg font-semibold">
                   Our Services
                 </span>
                 <h2 class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]">
                   What We Offer
                 </h2>
                 <p class="text-body-color text-base">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Quaerat reprehenderit autem ea ab repellat eum, quasi modi,
+                  Affordable & luxury accommodations, wide range of tour
+                  packages, indigenous & international variety of restaurants,
+                  well organised guides & beautiful memories of Srilanka.
                 </p>
               </div>
             </div>

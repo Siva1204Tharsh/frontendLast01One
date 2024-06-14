@@ -150,10 +150,10 @@ const Register = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-gray-100 via-[#8FBC8F] to-gray-100">
+    <div className="bg-[#F5F5F5] ">
       <div className="py-10 lg:py-20 px-16 lg:px-96 md:px-64 flex flex-col text-center">
         <div className="mb-8 text-center">
-          <h2 className="text-5xl font-bold">SIGN UP</h2>
+          <h2 className="text-5xl font-bold text-[#008080]">SIGN UP</h2>
         </div>
         <div className="mb-6 flex sm:flex-row justify-center">
           <img
@@ -240,8 +240,6 @@ const Register = () => {
                 >
                   <option value="traveler">Tourist</option>
                   <option value="hotelOwner">Hotel Owner</option>
-
-                  <option value="resturentOwner">Resturent Owner</option>
                   <option value="tourGuide">Tour Guide</option>
                   <option value="eventOrganizer">Event Organizer</option>
                 </select>
@@ -279,7 +277,7 @@ const Register = () => {
             <div className="mb-10">
               <button
                 type="submit"
-                className=" w-full font-bold text-center hover:bg-gray-600 cursor-pointer rounded-3xl bg-[#41A4FF] py-3 px-5 text-white transition hover:bg-opacity-90"
+                className=" w-full font-bold text-center hover:bg-gray-600 cursor-pointer rounded-3xl bg-[#008080] py-3 px-5 text-white transition hover:bg-opacity-90"
               >
                 Sign Up
               </button>
@@ -293,7 +291,7 @@ const Register = () => {
             Already a member yet?
             <Link
               to="/login"
-              className="text-primary hover:underline ms-2 font-bold"
+              className="text-[#008080] hover:underline ms-2 font-bold"
             >
               Sign In
             </Link>
