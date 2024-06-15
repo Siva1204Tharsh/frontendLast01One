@@ -51,7 +51,7 @@ const AdminNavbar = () => {
   return (
     <nav className="flex justify-between lg:px-32 md:px-22 px-12 w-full py-4 bg-gray-50 sticky top-0 z-[999]">
       <div className="flex items-center">
-        <Link to="/admin" className="text-2xl font-bold text-[#41A4FF]">
+        <Link to="/admin" className="text-2xl font-bold text-[#008080]">
           InTourNeTAdmin
         </Link>
       </div>
