@@ -12,7 +12,7 @@ const NavigatedMenu = () => {
   const Tour = tour.filter((tour) => tour.links === title);
 
   return (
-    <nav class="bg-grey-light w-full rounded-md pl-20 pt-10">
+    <nav class="bg-[#F5F5F5] w-full rounded-md pl-20 pt-10">
       <ol class="list-reset flex">
         <li>
           <Link
