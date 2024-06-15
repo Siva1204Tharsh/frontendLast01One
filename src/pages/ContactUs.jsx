@@ -2,8 +2,8 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <div class="flex min-h-screen items-center justify-start bg-[#F5F5F5]">
-      <div class="mx-auto w-full max-w-lg ">
+    <div class=" p-10 items-center justify-start bg-[#F5F5F5]">
+      <div class="mx-auto w-full max-w-lg  ">
         <h1 class="text-4xl font-medium text-[#008080]">Contact us</h1>
         <p class="mt-3">Email us at help@domain.com or message us here:</p>
 

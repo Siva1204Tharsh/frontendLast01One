@@ -24,22 +24,10 @@ const Services = () => {
     <>
       <div class="bg-[#F5F5F5] lg:px-36 lg:pt-5 lg:pb-[90px]">
         <div class="container mx-auto">
-          <div class="-mx-4 flex flex-wrap">
-            <div class="w-full px-4">
-              <div class="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
-                <span class="text-[#008080] mb-2 block text-lg font-semibold">
-                  Our Services
-                </span>
-                <h2 class="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]">
-                  What We Offer
-                </h2>
-                <p class="text-body-color text-base">
-                  Affordable & luxury accommodations, wide range of tour
-                  packages, indigenous & international variety of restaurants,
-                  well organised guides & beautiful memories of Srilanka.
-                </p>
-              </div>
-            </div>
+          <div class="mx-auto mb-12 max-w-[510px] text-center lg:mb-20 pt-20">
+            <h2 class="text-[#008080] mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]">
+              Our Services
+            </h2>
           </div>
           <div class="-mx-4 grid lg:grid-cols-3 gap-6">
             {categories.map((category) => (
