@@ -241,10 +241,6 @@ const UpdateuserA = () => {
                     <option value="hotelOwner" className="text-gray-900">
                       Hotel Owner
                     </option>
-
-                    <option value="restaurantOwner" className="text-gray-900">
-                      Restaurant Owner
-                    </option>
                     <option value="tourGuide" className="text-gray-900">
                       Tour Guide
                     </option>
@@ -286,7 +282,7 @@ const UpdateuserA = () => {
 
             <div>
               <button
-                className="bg-blue-500 w-full p-3 rounded-xl text-white font-bold mb-5"
+                className="bg-[#008080] w-full p-3 rounded-xl text-white font-bold mb-5"
                 type="submit"
               >
                 Update Profile

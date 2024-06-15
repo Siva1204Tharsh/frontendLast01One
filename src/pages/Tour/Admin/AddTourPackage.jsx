@@ -100,12 +100,12 @@ const AddTourPackage = () => {
   //gather all form data
 
   return (
-    <div className="mx-auto max-w-2xl px-4 py-10 sm:px-4 sm:py-15 lg:max-w-7xl lg:px-8">
+    <div className="mx-auto max-w-2xl px-4 py-10 sm:px-4 sm:py-15 lg:max-w-7xl lg:px-8 ">
       <form>
         <div className="space-y-12">
           {/* basic details */}
           <div>
-            <h2 className="text-3xl font-semibold leading-7 text-[#41A4FF] text-center">
+            <h2 className="text-3xl font-semibold leading-7 text-[#008080] text-center">
               Add Tour Package
             </h2>
             <p className="mt-3 text-red-500 text-lg leading-6 text-center">
@@ -397,7 +397,7 @@ const AddTourPackage = () => {
           </button>
           <button
             type="submit"
-            className="rounded-md bg-black px-3 py-2 text-lg font-semibold text-white shadow-sm hover:bg-[#41A4FF] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="rounded-md bg-black px-3 py-2 text-lg font-semibold text-white shadow-sm hover:bg-[#008080] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             onClick={handleSubmit}
           >
             Submit For Review

@@ -114,10 +114,12 @@ const Profileupdate = () => {
 
   return (
     <>
-      <div className="grid lg:grid-cols-2 gap-8 md:px-24 p-4 sm:py-8 ">
+      <div className="grid lg:grid-cols-2 gap-8 md:px-24 p-4 sm:py-8 bg-[#F5F5F5] ">
         <div className="flex flex-col justify-center items-center md:py-28 py-10 gap-5 rounded-lg bg-white p-6 md:m-20 m-5 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
           <div className="text-center mx-6 pb-4">
-            <h1 className="text-3xl font-bold text-blue-500">Update Details</h1>
+            <h1 className="text-3xl font-bold text-[#008080]">
+              Update Details
+            </h1>
           </div>
           <div>
             <img
@@ -228,7 +230,7 @@ const Profileupdate = () => {
             {loading2 && <Spinner />}
             <div>
               <button
-                className="bg-blue-500 p-3 w-96 rounded-xl text-white font-bold"
+                className="bg-[#008080] p-3 w-96 rounded-xl text-white font-bold"
                 type="submit"
               >
                 Update Profile
