@@ -151,7 +151,7 @@ const AdminNavbar = () => {
             : "fixed left-[-100%]"
         }
       >
-        <Link to="/admin" className="text-2xl font-medium text-blue-500 m-8">
+        <Link to="/admin" className="text-2xl font-medium text-[#008080] m-8">
           InTourNeT
         </Link>
         <ul className="px-4">
