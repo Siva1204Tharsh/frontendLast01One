@@ -112,7 +112,7 @@ export const AddHotel = () => {
   }
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center bg-[#F5F5F5]">
       <form
         class="w-full max-w-lg"
         onSubmit={sendData}
@@ -458,7 +458,7 @@ export const AddHotel = () => {
           </div>
         </div>
 
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mb-8">
+        <button class="bg-[#008080] hover:bg-[#008080] text-white font-bold py-2 px-4 rounded-full mb-8">
           SUBMIT
         </button>
         <input class="bg-[#787878] hover:bg-[#474747] text-white font-bold py-2 px-4 rounded-full ml-5

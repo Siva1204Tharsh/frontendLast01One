@@ -236,7 +236,7 @@ const UpdateuserA = () => {
                     className="w-96 px-2 py-2 placeholder-slate-300 text-slate-600 relative bg-white rounded-lg text-sm border border-slate-300 outline-none focus:outline-none focus:ring appearance-none"
                   >
                     <option value="traveler" className="text-gray-900">
-                      Traveler
+                      Tourist
                     </option>
                     <option value="hotelOwner" className="text-gray-900">
                       Hotel Owner

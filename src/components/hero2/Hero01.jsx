@@ -1,8 +1,15 @@
 import React from "react";
 
+const image = {
+  backgroundImage:
+    "url('https://www.slhcpakistan.org/wp-content/uploads/2019/12/sri-lanka5-1024x576.jpg')",
+  height: "500px",
+  backgroundPosition: "50%",
+};
+
 const Hero01 = () => {
   return (
-    <div class="bg-[#F5F5F5]  dark:bg-gray-800 pb-10 ">
+    <div class="relative overflow-hidden bg-no-repeat bg-cover " style={image}>
       <div class="text-center w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
         <h2 class="text-3xl font-extrabold text-[#008080] dark:text-white sm:text-4xl">
           <span class="block">Explore the Wonders in Sri Lanka</span>

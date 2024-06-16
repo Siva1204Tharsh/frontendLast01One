@@ -14,7 +14,7 @@ import welcome from "../../assets/Tour/Tour-Welcome.jpg";
 
 const Home = () => {
   return (
-    <div>
+    <div class="bg-[#F5F5F5]">
       <HeroTour />
 
       {/* Navigated menu start*/}

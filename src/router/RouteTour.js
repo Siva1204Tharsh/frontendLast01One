@@ -42,7 +42,6 @@ import UpdateHotel from "../pages/hotel/UpdateHotel";
 import HotelView from "../components/hotel/HotelView";
 import HotelOverView from "../components/hotel/HotelOverview";
 
-
 import HadminView from "../pages/hotel/HadminView";
 import HotelReserve from "../components/hotel/HotelReserve";
 import Hotellist from "../pages/Hotellist";
@@ -158,8 +157,6 @@ const RouteTour = () => {
       <Route path="/my-activities" element={<MyActivities />} />
       <Route path="/my-reservations" element={<ReservationPage />} />
 
-    
-
       <Route path="/hotelhome" element={<HotelHome />} />
       <Route path="/hotels/new" element={<AddHotel />} />
       <Route path="/rooms/new/:id" element={<AddRoom />} />
@@ -169,8 +166,6 @@ const RouteTour = () => {
       <Route path="/hoteladmin" element={<HadminView />} />
       <Route path="/hotelreserve/:id" element={<HotelReserve />} />
       <Route path="/hotelbooking" element={<HotelBook />} />
-
-
 
       <Route path="/finance" element={<Main />} />
       <Route path="/finance/salary" element={<SalaryCalculation />} />
