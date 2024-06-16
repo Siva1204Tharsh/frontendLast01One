@@ -188,9 +188,9 @@ const RouteTour = () => {
       {<Route path="finance/updateRefund/:id" element={<RefundUpdate />} />}
     
       <Route path="/mytripsold" element={<SavedTrips_Redundant />}/>       
-      <Route exact path="/mytrips" element={<SavedTrips />}/>
-      <Route exact path="/preferences" element={<UserPrefs />}/>
-      <Route exact path="/tripPlanMain" element={<MainPage />} />
+      <Route path="/mytrips" element={<SavedTrips />}/>
+      <Route path="/preferences" element={<UserPrefs />}/>
+      <Route path="/tripPlanMain" element={<MainPage />} />
           
 
 
