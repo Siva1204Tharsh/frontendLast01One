@@ -17,14 +17,7 @@ const inside_nav = [
     path: "/tours/home",
     display: "Tour Packages",
   },
-  {
-    path: "/Restaurants",
-    display: "Restaurants",
-  },
-  {
-    path: "/events",
-    display: "Events",
-  },
+  
 ];
 
 const AdminNavbar = () => {
@@ -49,7 +42,7 @@ const AdminNavbar = () => {
   }
 
   return (
-    <nav className="flex justify-between lg:px-32 md:px-22 px-12 w-full py-4 bg-gray-50 sticky top-0 z-[999]">
+    <nav className="flex justify-between lg:px-32 md:px-22 px-12 w-full py-4 bg-[#F5F5F5] sticky top-0 z-[999]">
       <div className="flex items-center">
         <Link to="/admin" className="text-2xl font-bold text-[#008080]">
           InTourNeTAdmin

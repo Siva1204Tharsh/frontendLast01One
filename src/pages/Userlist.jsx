@@ -63,13 +63,13 @@ const Userlist = ({ columns }) => {
   }
 
   return (
-    <>
+    <div className="bg-[#F5F5F5]">
       <div className="flex flex-row col-span-2 lg:px-32 px-8 pt-8 justify-between md:items-center ">
-        <div className="text-3xl font-bold">User Managment</div>
+        <div className="text-3xl font-bold text-[#008080]">User Managment</div>
         <div className="grid md:grid-cols-2 gap-1">
           <Link
             to="/adduser"
-            className="bg-blue-500 flex justify-center items-center hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer lg:mt-0 mt-3"
+            className="bg-[#008080] flex justify-center items-center hover:bg-[#008080] text-white font-bold py-2 px-4 rounded cursor-pointer lg:mt-0 mt-3"
           >
             Add User
           </Link>
@@ -87,7 +87,7 @@ const Userlist = ({ columns }) => {
       <div>
         <Datatable columns={columns} />
       </div>
-    </>
+    </div>
   );
 };
 

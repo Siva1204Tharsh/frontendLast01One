@@ -62,9 +62,9 @@ const Tourlist = ({ columns }) => {
   }
 
   return (
-    <>
+    <div className="bg-[#F5F5F5]">
       <div className="flex flex-row col-span-2 lg:px-32 px-8 pt-7 pb-2 justify-between md:items-center ">
-        <div className="text-3xl font-bold">Tour Package Managment</div>
+        <div className="text-3xl font-bold text-[#008080]">Tour Package Managment</div>
         <div className="grid md:grid-cols-2 gap-1">
           <Link
             to={"/addtour"}
@@ -92,7 +92,7 @@ const Tourlist = ({ columns }) => {
       <div>
         <Datatable columns={columns} />
       </div>
-    </>
+    </div>
   );
 };
 

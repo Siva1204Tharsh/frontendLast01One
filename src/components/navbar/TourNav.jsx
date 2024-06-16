@@ -72,7 +72,7 @@ const TourNav = () => {
                     <Menu>
                       {
                         <Link
-                          className=" hover:bg-[#41A4FF] hover:text-white px-3 py-5 rounded-lg"
+                          className=" hover:bg-[#008080] hover:text-white px-3 py-5 rounded-lg"
                           to={item.path}
                         >
                           {item.display}

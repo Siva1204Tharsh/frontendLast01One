@@ -100,7 +100,7 @@ const ResetPassword = () => {
       </p>
       {token2 ? (
         <form onSubmit={handleResetPassword} className="mb-6">
-          <label htmlFor="password" className="block mb-2 font-bold">
+          <label htmlFor="password" className="block mb-2 font-bold ">
             New Password
           </label>
           <input
@@ -114,7 +114,7 @@ const ResetPassword = () => {
 
           <button
             type="submit"
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            className="bg-[#008080] hover:bg-[#008080] text-white font-bold py-2 px-4 rounded"
           >
             Reset Password
           </button>

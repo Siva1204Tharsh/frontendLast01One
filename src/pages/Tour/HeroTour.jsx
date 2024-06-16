@@ -6,7 +6,7 @@ const image = {
     "url('https://firebasestorage.googleapis.com/v0/b/travely-7264c.appspot.com/o/header%20photo.jpg?alt=media&token=81dbb6a1-7b18-473d-a151-dbe0a59e8bb7')",
   height: "500px",
   backgroundPosition: "50%",
-};
+};///
 
 const HeroTour = () => {
   return (

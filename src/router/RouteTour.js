@@ -21,11 +21,6 @@ import {
   userColumns,
 } from "../components/datatable/datatablesource";
 
-import Activity from "../pages/special_activity/Activity";
-import PendingActivities from "../pages/special_activity/PendingActivities";
-import FilterActivities from "../pages/special_activity/FilterActivities";
-import ActivityForm from "../pages/special_activity/AddNewActivity";
-import MyActivities from "../pages/special_activity/MyActivities";
 import ReservationPage from "../pages/special_activity/Reservations";
 import PendingReservationsPage from "../pages/special_activity/PendingReservations";
 import UserpageA from "../pages/UserpageA";
@@ -42,7 +37,6 @@ import UpdateHotel from "../pages/hotel/UpdateHotel";
 import HotelView from "../components/hotel/HotelView";
 import HotelOverView from "../components/hotel/HotelOverview";
 
-
 import HadminView from "../pages/hotel/HadminView";
 import HotelReserve from "../components/hotel/HotelReserve";
 import Hotellist from "../pages/Hotellist";
@@ -54,13 +48,7 @@ import ResetPassword from "../pages/ResetPassword";
 import Tourreservations from "../pages/Tourreservations";
 
 import { Main } from "../pages/Main";
-import Refund from "../components/Refund";
-import RefundReq from "../components/RefundReq";
-import RefundUpdate from "../components/RefundUpdate";
-import { SalaryCalculation } from "../pages/SalaryCalculation";
-import { EmployeeList } from "../pages/EmployeeList";
-import { SalarySheet } from "../pages/SalarySheet";
-import { FinanceHealth } from "../pages/FinanceHealth";
+
 
 import MainPage from "../pages/Tour/TripPlanner/mainpage";
 import SavedTrips_Redundant from "../pages/Tour/TripPlanner/savedTrips_Redundant";
@@ -152,19 +140,12 @@ const RouteTour = () => {
 
       <Route path="/contactus" element={<ContactUs />} />
 
-      <Route path="/add-new-activity" element={<ActivityForm />} />
-      <Route path="/add-new-activity/:id" element={<ActivityForm />} />
-      <Route path="/pending-activities" element={<PendingActivities />} />
       <Route
         path="/pending-reservations"
         element={<PendingReservationsPage />}
       />
-      <Route path="/events" element={<FilterActivities />} />
-      <Route path="/activities/:id" element={<Activity />} />
-      <Route path="/my-activities" element={<MyActivities />} />
-      <Route path="/my-reservations" element={<ReservationPage />} />
 
-    
+      <Route path="/my-reservations" element={<ReservationPage />} />
 
       <Route path="/hotelhome" element={<HotelHome />} />
       <Route path="/hotels/new" element={<AddHotel />} />
@@ -176,9 +157,8 @@ const RouteTour = () => {
       <Route path="/hotelreserve/:id" element={<HotelReserve />} />
       <Route path="/hotelbooking" element={<HotelBook />} />
 
-
-
       <Route path="/finance" element={<Main />} />
+
       <Route path="/finance/salary" element={<SalaryCalculation />} />
       <Route path="/finance/employee" element={<EmployeeList />} />
       <Route path="/finance/salarySheet" element={<SalarySheet />} />

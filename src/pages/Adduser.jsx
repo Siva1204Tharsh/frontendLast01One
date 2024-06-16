@@ -127,7 +127,7 @@ const Adduser = () => {
       <div className="grid lg:grid-cols-2 gap-8 md:px-24 p-4 sm:py-8">
         <div className="flex flex-col justify-center items-center md:py-36 py-10 gap-5 rounded-lg md:m-20 m-5 bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
           <div className="text-center mx-6 pt-3 pb-3">
-            <h1 className="text-4xl font-bold text-blue-500">Add User</h1>
+            <h1 className="text-4xl font-bold text-[#008080]">Add User</h1>
           </div>
           <div>
             <img
@@ -198,10 +198,9 @@ const Adduser = () => {
               onChange={(e) => setType(e.target.value)}
               className="w-full px-4 py-2 rounded-lg placeholder-gray-400 text-gray-600 bg-white border border-gray-300 outline-none focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
-              <option value="traveler">Traveler</option>
+              <option value="traveler">Tourist</option>
               <option value="hotelOwner">Hotel Owner</option>
-              <option value="vehicleOwner">Vehicle Owner</option>
-              <option value="resturentOwner">Restaurant Owner</option>
+
               <option value="tourGuide">Tour Guide</option>
               <option value="eventOrganizer">Event Organizer</option>
             </select>
@@ -238,7 +237,7 @@ const Adduser = () => {
             </div>
             {loading2 && <Spinner />}
             <button
-              className="bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg font-semibold mb-9"
+              className="bg-[#008080] hover:bg-[#008080] text-white py-3 rounded-lg font-semibold mb-9"
               type="submit"
             >
               Add User
