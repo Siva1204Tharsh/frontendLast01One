@@ -21,7 +21,6 @@ import {
   userColumns,
 } from "../components/datatable/datatablesource";
 
-
 import ReservationPage from "../pages/special_activity/Reservations";
 import PendingReservationsPage from "../pages/special_activity/PendingReservations";
 import UserpageA from "../pages/UserpageA";
@@ -49,11 +48,6 @@ import ResetPassword from "../pages/ResetPassword";
 import Tourreservations from "../pages/Tourreservations";
 
 import { Main } from "../pages/Main";
-import Refund from "../components/Refund";
-import RefundReq from "../components/RefundReq";
-import RefundUpdate from "../components/RefundUpdate";
-
-
 
 
 const RouteTour = () => {
@@ -140,14 +134,11 @@ const RouteTour = () => {
 
       <Route path="/contactus" element={<ContactUs />} />
 
-      
-      
       <Route
         path="/pending-reservations"
         element={<PendingReservationsPage />}
       />
-      
-      
+
       <Route path="/my-reservations" element={<ReservationPage />} />
 
       <Route path="/hotelhome" element={<HotelHome />} />
@@ -161,13 +152,8 @@ const RouteTour = () => {
       <Route path="/hotelbooking" element={<HotelBook />} />
 
       <Route path="/finance" element={<Main />} />
-      
-      
-      
-     
-      {<Route path="/finance/refund" element={<Refund />} />}
-      {<Route path="finance/addRefund" element={<RefundReq />} />}
-      {<Route path="finance/updateRefund/:id" element={<RefundUpdate />} />}
+
+    
     </Routes>
   );
 };
