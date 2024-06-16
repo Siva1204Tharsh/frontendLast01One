@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import { useNavigate } from 'react-router-dom';
 import { RiMapPin5Fill } from "react-icons/ri";
 import { IoPeopleSharp } from "react-icons/io5";
 import { HiUserGroup } from "react-icons/hi";
@@ -14,14 +15,22 @@ import Swal from "sweetalert2";
 import axios from "axios";
 import { AuthContext } from "../../../context/authContext";
 
+
+
+
 const number = [1, 2, 3, 5, 7, 9, 12];
 const CustomForm = () => {
+  const navigate = useNavigate();
   const [whereFrom, setFrom] = useState("");
   const [whereTo, setTo] = useState("");
   const [days, setDays] = useState(0);
 
   const { user } = useContext(AuthContext);
   console.log(user);
+
+  const handleClick = () => {
+    navigate('/tripPlanMain'); 
+  }
 
   const inputHandler = async (e) => {
     e.preventDefault();
@@ -72,12 +81,11 @@ const CustomForm = () => {
     <div className="mx-auto max-w-2xl px-4 pb-16 sm:px-6 lg:max-w-7xl lg:px-8">
       <div className="mt-6 grid grid-cols-1 gap-x-6   lg:grid-cols-2 xl:gap-x-8 ">
         {/* how it works */}
-        <div className="bg-[#41BBFF]">
+        <div className="bg-[#219595] rounded-xl">
           {/* upper-1 */}
           <div>
             <h1
               className="text-center p-3 mt-5 text-5xl "
-              style={{ fontFamily: "popins" }}
             >
               How it Works{" "}
             </h1>
@@ -134,18 +142,17 @@ const CustomForm = () => {
         </div>
         {/* how it works end */}
         {/* Customize form */}
-        <div className="shadow-2xl flex justify-center items-center">
+        <div className="shadow-2xl flex justify-center items-center rounded-xl">
           <div>
-            <p className="items-center text-8xl p-3 flex justify-center text-blue-600">
+            <p className="items-center text-8xl p-3 flex justify-center text-[#219595]">
               <TbMap2 />
             </p>
             <h2
               className="text-center text-3xl "
-              style={{ fontFamily: "popins" }}
             >
-              Where Do You Want to Go?
+              Tell us your destination...
             </h2>
-            <form action="" className="px-4 ">
+            <form action="" className="px-4 mt-6">
               <div>
                 <div>
                   <h6 className="mb-1">From Where</h6>
@@ -209,7 +216,7 @@ const CustomForm = () => {
                             type="submit"
                             data-te-ripple-init
                             data-te-ripple-color="light"
-                            class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                            class="inline-block rounded bg-[#008080] px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-[#14a2a2] hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
                             onClick={inputHandler}
                           >
                             Submit
@@ -225,6 +232,31 @@ const CustomForm = () => {
           <div></div>
         </div>
       </div>
+      
+      {/* className="mt-6 grid grid-cols-3 gap-x-6   lg:grid-cols-2 xl:gap-x-8 " */}
+      {/* Plan trip start */}
+      <div className=" mt-6 w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center bg-[#f4f3ff] rounded-xl p-10 shadow-lg">
+      
+        <div className="flex-1 md:pr-10">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Build your SOLO trip in minutes</h1>
+          <p className="text-lg text-gray-700 mb-6">
+            Get a personalized itinerary just for you, guided by traveler tips and reviews.
+          </p>
+          <button 
+          onClick={handleClick}
+          className="bg-[#008080] text-white py-2 px-4 rounded-lg hover:bg-[#14a2a2] transition">
+            Plan your own
+          </button>
+        </div>
+        <div className="flex-1 mt-6 md:mt-0">
+          <img src={process.env.PUBLIC_URL + '/image.png'} alt="Mobile showing Chicago Itinerary" className="rounded-xl" />
+        </div>
+      
+
+      </div>
+    {/* Plan trip end */}
+
+
     </div>
   );
 };
