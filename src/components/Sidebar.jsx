@@ -81,13 +81,13 @@ const Sidebar = () => {
             <p>Finance Health</p>
           </Link> */}
 
-          <Link
+          {/* <Link
             to=""
             className="flex items-center gap-[15px] py-[20px] border-b-[1px] border-[#FFFFFF]/[1] mt-10"
           >
             <FaSignOutAlt color="#636363" />
             <p>Log Out</p>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

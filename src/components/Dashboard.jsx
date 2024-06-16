@@ -101,10 +101,10 @@ const Dashboard = () => {
         <div className="h-[100px] rounded-[8px] bg-white border-l-[4px] border-[#25db47] flex items-center justify-between px-[30px] cursor-pointer hover:shadow-lg transform hover:scale-[103%] transition duration-300 ease-out">
           <div>
             <h2 className="text-[11px] leading-[17px] font-bold">
-              Earnings(Monthly)
+              Users(Monthly)
             </h2>
             <h1 className="text-[20px] leading-[24px] font-bold text-[#5a5c69] mt-[5px]">
-              $40,000
+              400
             </h1>
           </div>
           <FaRegCalendarMinus fontSize={28} color="" />
@@ -112,28 +112,28 @@ const Dashboard = () => {
         <div className="h-[100px] rounded-[8px] bg-white border-l-[4px] border-[#edea50] flex items-center justify-between px-[30px] cursor-pointer hover:shadow-lg transform hover:scale-[103%] transition duration-300 ease-out">
           <div>
             <h2 className="text-[11px] leading-[17px] font-bold">
-              Earnings(Anually)
+              Users(Anually)
             </h2>
             <h1 className="text-[20px] leading-[24px] font-bold text-[#5a5c69] mt-[5px]">
-              $100,000
+              100,000
             </h1>
           </div>
           <FaRegCalendarMinus fontSize={28} color="" />
         </div>{" "}
         <div className="h-[100px] rounded-[8px] bg-white border-l-[4px] border-[#df4e4e] flex items-center justify-between px-[30px] cursor-pointer hover:shadow-lg transform hover:scale-[103%] transition duration-300 ease-out">
           <div>
-            <h2 className="text-[11px] leading-[17px] font-bold">Expenses</h2>
+            <h2 className="text-[11px] leading-[17px] font-bold">HotelOwners</h2>
             <h1 className="text-[20px] leading-[24px] font-bold text-[#5a5c69] mt-[5px]">
-              $60,000
+              600
             </h1>
           </div>
           <FaRegCalendarMinus fontSize={28} color="" />
         </div>{" "}
         <div className="h-[100px] rounded-[8px] bg-white border-l-[4px] border-[#4E73DF] flex items-center justify-between px-[30px] cursor-pointer hover:shadow-lg transform hover:scale-[103%] transition duration-300 ease-out">
           <div>
-            <h2 className="text-[11px] leading-[17px] font-bold">Profit</h2>
+            <h2 className="text-[11px] leading-[17px] font-bold">TourGuides</h2>
             <h1 className="text-[20px] leading-[24px] font-bold text-[#5a5c69] mt-[5px]">
-              $40,000
+              400
             </h1>
           </div>
           <FaRegCalendarMinus fontSize={28} color="" />

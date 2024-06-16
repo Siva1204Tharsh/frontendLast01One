@@ -2,10 +2,10 @@ import React from 'react'
 import { PieChart, Pie, Cell } from 'recharts';
 
 const data = [
-  { name: 'Premium ', value: 400 },
-  { name: 'Exclusive ', value: 300 },
-  { name: 'Bronze', value: 300 },
-  { name: 'Silver', value: 200 },
+  { name: 'Tourist ', value: 400 },
+  { name: 'HOwner ', value: 300 },
+  { name: 'Guide', value: 300 },
+  { name: 'Other', value: 200 },
 ];
 
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
