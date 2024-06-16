@@ -21,11 +21,7 @@ import {
   userColumns,
 } from "../components/datatable/datatablesource";
 
-import Activity from "../pages/special_activity/Activity";
-import PendingActivities from "../pages/special_activity/PendingActivities";
-import FilterActivities from "../pages/special_activity/FilterActivities";
-import ActivityForm from "../pages/special_activity/AddNewActivity";
-import MyActivities from "../pages/special_activity/MyActivities";
+
 import ReservationPage from "../pages/special_activity/Reservations";
 import PendingReservationsPage from "../pages/special_activity/PendingReservations";
 import UserpageA from "../pages/UserpageA";
@@ -145,16 +141,14 @@ const RouteTour = () => {
 
       <Route path="/contactus" element={<ContactUs />} />
 
-      <Route path="/add-new-activity" element={<ActivityForm />} />
-      <Route path="/add-new-activity/:id" element={<ActivityForm />} />
-      <Route path="/pending-activities" element={<PendingActivities />} />
+      
+      
       <Route
         path="/pending-reservations"
         element={<PendingReservationsPage />}
       />
-      <Route path="/events" element={<FilterActivities />} />
-      <Route path="/activities/:id" element={<Activity />} />
-      <Route path="/my-activities" element={<MyActivities />} />
+      
+      
       <Route path="/my-reservations" element={<ReservationPage />} />
 
       <Route path="/hotelhome" element={<HotelHome />} />

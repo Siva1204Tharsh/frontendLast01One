@@ -17,14 +17,7 @@ const inside_nav = [
     path: "/tours/home",
     display: "Tour Packages",
   },
-  {
-    path: "/Restaurants",
-    display: "Restaurants",
-  },
-  {
-    path: "/events",
-    display: "Events",
-  },
+  
 ];
 
 const AdminNavbar = () => {

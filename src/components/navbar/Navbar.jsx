@@ -17,10 +17,6 @@ const inside_nav = [
     path: "/tours/home",
     display: "Tour Packages",
   },
-  {
-    path: "/events",
-    display: "Events",
-  },
 ];
 
 const Navbar = () => {

@@ -129,7 +129,7 @@ const Admin = () => {
         </Link>
       </div>
 
-      <div className="flex flex-row col-span-3 lg:px-32 px-8 pt-8 justify-between items-stretch gap-10">
+      {/* <div className="flex flex-row col-span-3 lg:px-32 px-8 pt-8 justify-between items-stretch gap-10">
         <Link
           to="/pending-activities"
           className="p-10 flex-1 hover:bg-[#008080] hover:text-2xl transition duration-300 ease-in-out hover:text-white rounded-lg font-bold shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
@@ -143,7 +143,7 @@ const Admin = () => {
         >
           Other
         </Link>
-      </div>
+      </div> */}
       <div className="flex flex-row col-span-2 lg:px-32 px-8 pt-8 justify-between items-stretch gap-10">
         <div className="p-10 flex-1  rounded-lg font-bold shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
           <ResponsiveContainer width="100%" height="100%">
