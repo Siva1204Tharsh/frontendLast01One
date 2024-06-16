@@ -50,6 +50,12 @@ import Tourreservations from "../pages/Tourreservations";
 import { Main } from "../pages/Main";
 
 
+import MainPage from "../pages/Tour/TripPlanner/mainpage";
+import SavedTrips_Redundant from "../pages/Tour/TripPlanner/savedTrips_Redundant";
+import SavedTrips from "../pages/Tour/TripPlanner/savedTrips";
+import UserPrefs from "../pages/Tour/TripPlanner/userPrefs";
+
+
 const RouteTour = () => {
   const ProtectedRoute = ({ children }) => {
     const { user } = useContext(AuthContext);
@@ -153,7 +159,21 @@ const RouteTour = () => {
 
       <Route path="/finance" element={<Main />} />
 
+      <Route path="/finance/salary" element={<SalaryCalculation />} />
+      <Route path="/finance/employee" element={<EmployeeList />} />
+      <Route path="/finance/salarySheet" element={<SalarySheet />} />
+      <Route path="/finance/FinanceHealth" element={<FinanceHealth />} />
+      {<Route path="/finance/refund" element={<Refund />} />}
+      {<Route path="finance/addRefund" element={<RefundReq />} />}
+      {<Route path="finance/updateRefund/:id" element={<RefundUpdate />} />}
     
+      <Route path="/mytripsold" element={<SavedTrips_Redundant />}/>       
+      <Route path="/mytrips" element={<SavedTrips />}/>
+      <Route path="/preferences" element={<UserPrefs />}/>
+      <Route path="/tripPlanMain" element={<MainPage />} />
+          
+
+
     </Routes>
   );
 };
