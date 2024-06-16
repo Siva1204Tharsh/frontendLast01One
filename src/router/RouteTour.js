@@ -52,10 +52,9 @@ import { Main } from "../pages/Main";
 import Refund from "../components/Refund";
 import RefundReq from "../components/RefundReq";
 import RefundUpdate from "../components/RefundUpdate";
-import { SalaryCalculation } from "../pages/SalaryCalculation";
-import { EmployeeList } from "../pages/EmployeeList";
-import { SalarySheet } from "../pages/SalarySheet";
-import { FinanceHealth } from "../pages/FinanceHealth";
+
+
+
 
 const RouteTour = () => {
   const ProtectedRoute = ({ children }) => {
@@ -162,10 +161,10 @@ const RouteTour = () => {
       <Route path="/hotelbooking" element={<HotelBook />} />
 
       <Route path="/finance" element={<Main />} />
-      <Route path="/finance/salary" element={<SalaryCalculation />} />
-      <Route path="/finance/employee" element={<EmployeeList />} />
-      <Route path="/finance/salarySheet" element={<SalarySheet />} />
-      <Route path="/finance/FinanceHealth" element={<FinanceHealth />} />
+      
+      
+      
+     
       {<Route path="/finance/refund" element={<Refund />} />}
       {<Route path="finance/addRefund" element={<RefundReq />} />}
       {<Route path="finance/updateRefund/:id" element={<RefundUpdate />} />}

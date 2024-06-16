@@ -14,7 +14,7 @@ const Sidebar = () => {
   return (
     <div className="bg-[#F4F4F4] h-[100%] px-[25px]">
       <div className="px-[15px] py-[30px] flex place-items-center justify-center border-b-[1px] border-[#FFFFFF]/[1]">
-        <h1 className="text-[#41A4FF] text-[40px] leading-[24px] font-extrabold cursor-pointer">
+        <h1 className="text-[#008080] text-[40px] leading-[24px] font-extrabold cursor-pointer">
           InTourNeT
         </h1>
       </div>
@@ -35,10 +35,10 @@ const Sidebar = () => {
         </div>
 
         <div className="flex items-center pt-2 text-[17px] font-bold ">
-          <h1>Shamini</h1>
+          <h1>Admin</h1>
         </div>
         <div className=" text-sm">
-          <h1>Finance manager</h1>
+          <h1>SivanaG</h1>
         </div>
         <div className=" items-start mt-4 ">
           <Link
