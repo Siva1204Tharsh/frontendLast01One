@@ -1,12 +1,8 @@
 import React from "react";
 import {
   FaTachometerAlt,
-  FaWpforms,
-  FaBook,
-  FaCalculator,
   FaListUl,
   FaSignOutAlt,
-  FaMoneyCheck,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -34,26 +30,26 @@ const Sidebar = () => {
           </svg>
         </div>
 
-        <div className="flex items-center pt-2 text-[17px] font-bold ">
+        {/* <div className="flex items-center pt-2 text-[17px] font-bold ">
           <h1>Admin</h1>
         </div>
         <div className=" text-sm">
           <h1>SivanaG</h1>
-        </div>
+        </div> */}
         <div className=" items-start mt-4 ">
           <Link
-            to="/finance"
+            to="/admin"
             className="btn flex items-center gap-[15px] py-[20px] border-b-[1px] border-[#FFFFFF]/[1]"
           >
             <FaTachometerAlt color="#636363" />
             <p>Dashbord</p>
           </Link>
-          <Link
+          {/* <Link
             to="/finance/refund"
             className="flex items-center gap-[15px] py-[20px] border-b-[1px] border-[#FFFFFF]/[1]"
           >
             <FaWpforms color="#636363" />
-            <p>Refund Request</p>
+            <p>UserManagement</p>
           </Link>
           <Link
             to="/finance/salary"
@@ -61,15 +57,15 @@ const Sidebar = () => {
           >
             <FaCalculator color="#636363" />
             <p>Salary Calculation</p>
-          </Link>
+          </Link> */}
           <Link
-            to="/finance/employee"
+            to="/users"
             className="flex items-center gap-[15px] py-[20px] border-b-[1px] border-[#FFFFFF]/[1]"
           >
             <FaListUl color="#636363" />
-            <p>Employee List</p>
+            <p>UserManagement</p>
           </Link>
-          <Link
+          {/* <Link
             to="/finance/salarySheet"
             className="flex items-center gap-[15px] py-[20px] border-b-[1px] border-[#FFFFFF]/[1]"
           >
@@ -83,7 +79,7 @@ const Sidebar = () => {
           >
             <FaMoneyCheck color="#636363" />
             <p>Finance Health</p>
-          </Link>
+          </Link> */}
 
           <Link
             to=""
