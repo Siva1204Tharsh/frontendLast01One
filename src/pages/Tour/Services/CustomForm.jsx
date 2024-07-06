@@ -249,7 +249,7 @@ const CustomForm = () => {
           </button>
         </div>
         <div className="flex-1 mt-6 md:mt-0">
-          <img src={process.env.PUBLIC_URL + '/image.png'} alt="Mobile showing Chicago Itinerary" className="rounded-xl" />
+          <img src={process.env.PUBLIC_URL + '/image.png'} alt="Mobile showing an Itinerary img" className="rounded-xl" />
         </div>
       
 

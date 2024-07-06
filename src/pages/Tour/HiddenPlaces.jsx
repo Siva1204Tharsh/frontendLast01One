@@ -82,12 +82,7 @@ const HiddenPlaces = () => {
         <div class="text-xl">
           <p className="font-extrabold text-2xl mb-3">Hulangala</p>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            fugiat cupiditate quas vitae, ducimus saepe quos voluptatibus,
-            accusantium qui voluptates earum voluptatum. Consequuntur alias
-            beatae laborum neque quisquam, quae sit, inventore maxime sed
-            eligendi aliquid a cum voluptatum nostrum deleniti cumque minima ab
-            ullam impedit eveniet nulla sequi quis odit?
+          Hulangala, also known as the Mini World’s End, is a scenic viewpoint located at the southern end of the Knuckles mountain range in the Selagama estate. Rising to 1025 meters (3360 feet) above sea level, Hulangala offers spectacular vistas of the surrounding valley. Visitors can hike approximately 2-3 km from the line houses of Selagama estate or use motorbikes, three-wheelers, or 4x4 vehicles to reach the viewpoint. While there, consider exploring the nearby Yatawatta Biso Ella waterfall within the same estate. Enjoy the breathtaking scenery
           </p>
         </div>
       </div>
