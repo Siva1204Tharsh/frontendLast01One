@@ -238,7 +238,7 @@ const CustomForm = () => {
       
       {/* className="mt-6 grid grid-cols-3 gap-x-6   lg:grid-cols-2 xl:gap-x-8 " */}
       {/* Plan trip start */}
-      <div className=" mt-6 w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center bg-[#f4f3ff] rounded-xl p-10 shadow-lg">
+      <div className=" mt-6 w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center bg-[#F5F5F5] rounded-xl p-10 shadow-lg">
       
         <div className="flex-1 md:pr-10">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Build your SOLO trip in minutes</h1>
