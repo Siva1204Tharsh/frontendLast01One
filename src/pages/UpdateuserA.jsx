@@ -244,9 +244,6 @@ const UpdateuserA = () => {
                     <option value="tourGuide" className="text-gray-900">
                       Tour Guide
                     </option>
-                    {/* <option value="eventOrganizer" className="text-gray-900">
-                      Event Organizer
-                    </option> */}
                   </select>
                   <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                     <svg
