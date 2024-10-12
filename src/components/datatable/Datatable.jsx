@@ -69,6 +69,10 @@ const Datatable = ({ columns }) => {
         const tourData = await axios.get(`${path}/${id}`);
         navigate("/tour/view", { state: tourData.data });
       }
+      if (path === "tourreservation") {
+        const tourData = await axios.get(`${path}/${id}`);
+        navigate("/tour/view", { state: tourData.data });
+      }
     } catch (error) {
       console.log(error);
     }

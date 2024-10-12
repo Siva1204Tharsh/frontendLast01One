@@ -119,8 +119,8 @@ export const AddHotel = () => {
         encType="multipart/form-data"
       >
         <h1 className="text-2xl font-bold mb-8 mt-8">
-          List Your <span class="text-[#41A4FF]">Hotel</span> and{" "}
-          <span class="text-[#41A4FF]">Join</span> with us
+          List Your <span class="text-[#008080]">Hotel</span> and{" "}
+          <span class="text-[#008080 ]">Join</span> with us
         </h1>
         <div class="flex flex-wrap -mx-3 mb-3">
           <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">

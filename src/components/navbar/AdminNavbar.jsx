@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import { useContext } from "react";
 import { AuthContext } from "../../context/authContext";
 import axios from "axios";
 
@@ -17,21 +16,18 @@ const inside_nav = [
     path: "/tours/home",
     display: "Tour Packages",
   },
-  
 ];
 
 const AdminNavbar = () => {
   const { user, loading, error, logout } = useContext(AuthContext);
-
   const navigate = useNavigate();
+  const [nav, setNav] = useState(true);
 
   const handleLogout = () => {
     logout();
     navigate("/login");
     window.location.reload();
   };
-
-  const [nav, setNav] = useState(true);
 
   const handleNav = () => {
     setNav(!nav);
@@ -41,24 +37,40 @@ const AdminNavbar = () => {
     return classes.filter(Boolean).join(" ");
   }
 
+  // Function to handle dashboard navigation
+  const handleDashboardNavigation = () => {
+    if (user.role === "tourGuide") {
+      navigate("/tours");
+    } else if (user.role === "hotelOwner") {
+      navigate("/hotels");
+    }
+  };
+
   return (
     <nav className="flex justify-between lg:px-32 md:px-22 px-12 w-full py-4 bg-[#F5F5F5] sticky top-0 z-[999]">
       <div className="flex items-center">
-        <Link to="/admin" className="text-2xl font-bold text-[#008080]">
+        <p className="text-2xl font-bold text-[#008080]">
           InTourNeTAdmin
-        </Link>
+        </p>
       </div>
 
       {/* <!-- right header section --> */}
       <div className="items-center space-x-3 hidden md:flex">
         {user ? (
           <>
-            <button className=""></button>
+            {/* Conditionally render the Dashboard option based on user role */}
+            {(user.role === "tourGuide" || user.role === "hotelOwner") && (
+              <button
+                className="px-4 py-2 text-white bg-[#41A4FF] rounded-md"
+                onClick={handleDashboardNavigation}
+              >
+                Dashboard
+              </button>
+            )}
             <Menu as="div" className="relative inline-block text-left">
               <div>
                 <Menu.Button className="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                  {/* {user.name} */}
-                  <img class="h-8 w-8 rounded-full" src={user.img} alt=""></img>
+                  <img className="h-8 w-8 rounded-full" src={user.img} alt=""></img>
                 </Menu.Button>
               </div>
 
@@ -130,6 +142,7 @@ const AdminNavbar = () => {
           </>
         )}
       </div>
+
       <div onClick={handleNav} className="block md:hidden">
         {nav ? (
           <AiOutlineMenu size={20} style={{ color: "black" }} />
@@ -137,6 +150,7 @@ const AdminNavbar = () => {
           <AiOutlineClose size={20} style={{ color: "black" }} />
         )}
       </div>
+
       <div
         className={
           !nav
@@ -150,13 +164,21 @@ const AdminNavbar = () => {
         <ul className="px-4">
           {user ? (
             <>
-              <button className=""></button>
+              {(user.role === "tourGuide" || user.role === "hotelOwner") && (
+                <li className="p-4">
+                  <button
+                    className="px-4 py-2 text-white bg-[#41A4FF] rounded-md"
+                    onClick={handleDashboardNavigation}
+                  >
+                    Dashboard
+                  </button>
+                </li>
+              )}
               <Menu as="div" className="relative inline-block text-left p-4">
                 <div>
                   <Menu.Button className="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                    {/* {user.name} */}
                     <img
-                      class="h-8 w-8 rounded-full"
+                      className="h-8 w-8 rounded-full"
                       src={user.img}
                       alt=""
                     ></img>
@@ -186,7 +208,7 @@ const AdminNavbar = () => {
                                 : "text-gray-700",
                               "block px-4 py-2 text-sm"
                             )}
-                            to="/"
+                            to="/profile"
                           >
                             Profile
                           </Link>
