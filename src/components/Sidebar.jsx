@@ -65,6 +65,13 @@ const Sidebar = () => {
             <FaListUl color="#636363" />
             <p>UserManagement</p>
           </Link>
+          <Link
+            to="/users"
+            className="flex items-center gap-[15px] py-[20px] border-b-[1px] border-[#FFFFFF]/[1]"
+          >
+            <FaListUl color="#636363" />
+            <p>Chat</p>
+          </Link>
           {/* <Link
             to="/finance/salarySheet"
             className="flex items-center gap-[15px] py-[20px] border-b-[1px] border-[#FFFFFF]/[1]"
