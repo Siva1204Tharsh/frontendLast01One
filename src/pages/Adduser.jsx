@@ -196,7 +196,6 @@ const Adduser = () => {
               <option value="hotelOwner">Hotel Owner</option>
 
               <option value="tourGuide">Tour Guide</option>
-              {/* <option value="eventOrganizer">Event Organizer</option> */}
             </select>
             <input
               type="password"
