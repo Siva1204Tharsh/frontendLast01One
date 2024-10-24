@@ -41,7 +41,13 @@ const Login = () => {
         navigate("/admin");
       } else if (res.data.details.type == "financeManager") {
         navigate("/finance");
-      } else if (res.data.isAdmin === false) {
+      }else if (res.data.details.type == "hotelOwner") {
+        navigate("/hotels");
+      } else if (res.data.details.type == "tourGuide") {
+        navigate("/tours");
+      }
+      
+      else if (res.data.isAdmin === false) {
         navigate("/");
       }
     } catch (err) {

@@ -19,34 +19,39 @@ const tours = [
     dayDetails: [
       {
         day: "1",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora soluta itaque delectus iusto maiores nihil nobis? Quasi officiis quo provident ab in laborum nobis ullam porro, a qui vero dolores aut? Sunt deserunt sit expedita sapiente iusto repellendus voluptatem ipsam, recusandae magni culpa provident porro a odio facilis aut praesentium libero dolorem? Magni perferendis quaerat necessitatibus, recusandae repellat modi quidem cupiditate tempore sit eum iure sint nulla qui possimus odit dignissimos illo adipisci explicabo quia harum vero dolore deleniti eveniet molestiae? Voluptatem quam quae laborum at tenetur officiis id adipisci ad aspernatur a sequi soluta quia eos nihil voluptatum iusto, quod vero, fuga placeat totam asperiores, quasi dolores aliquam? Ex quos, et iste praesentium eum aut ut quibusdam sit doloremque nam exercitationem veritatis enim inventore, odit sed hic aliquam ea. Quibusdam iure necessitatibus quos corrupti dignissimos. Quis eveniet nam facilis. Neque ea ipsam a quia ullam repudiandae, distinctio molestiae voluptate doloribus quod consequatur vel ducimus sit nam iusto nemo? Qui quaerat cupiditate sapiente cumque corporis expedita placeat. Tenetur eligendi possimus error dolor illo sit repudiandae minus consequatur laboriosam natus velit, id earum animi ipsa aperiam quis consequuntur quas odio asperiores? Vel excepturi cumque amet quae dignissimos ducimus sint laboriosam! Explicabo.",
+        desc: "Arrive in Kandy and check into your hotel. Take a leisurely walk around Kandy Lake and enjoy the serene views.Afternoon: Visit the Temple of the Tooth Relic (Sri Dalada Maligawa), a UNESCO World Heritage Site and one of the most sacred places for Buddhists. Explore the Kandy Museum to learn about the city’s rich history. Evening: Attend a cultural show featuring traditional Kandyan dance and music. Dinner at a local restaurant, trying some traditional Sri Lankan dishes."
       },
       {
         day: "2",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora soluta itaque delectus iusto maiores nihil nobis? Quasi officiis quo provident ab in laborum nobis ullam porro, a qui vero dolores aut? Sunt deserunt sit expedita sapiente iusto repellendus voluptatem ipsam, recusandae magni culpa provident porro a odio facilis aut praesentium libero dolorem? Magni perferendis quaerat necessitatibus, recusandae repellat modi quidem cupiditate tempore sit eum iure sint nulla qui possimus odit dignissimos illo adipisci explicabo quia harum vero dolore deleniti eveniet molestiae? Voluptatem quam quae laborum at tenetur officiis id adipisci ad aspernatur a sequi soluta quia eos nihil voluptatum iusto, quod vero, fuga placeat totam asperiores, quasi dolores aliquam? Ex quos, et iste praesentium eum aut ut quibusdam sit doloremque nam exercitationem veritatis enim inventore, odit sed hic aliquam ea. Quibusdam iure necessitatibus quos corrupti dignissimos. Quis eveniet nam facilis. Neque ea ipsam a quia ullam repudiandae, distinctio molestiae voluptate doloribus quod consequatur vel ducimus sit nam iusto nemo? Qui quaerat cupiditate sapiente cumque corporis expedita placeat. Tenetur eligendi possimus error dolor illo sit repudiandae minus consequatur laboriosam natus velit, id earum animi ipsa aperiam quis consequuntur quas odio asperiores? Vel excepturi cumque amet quae dignissimos ducimus sint laboriosam! Explicabo.",
+        desc: "Begins with a visit to the stunning Royal Botanical Gardens in Peradeniya, followed by a hike in the Udawattekele Sanctuary, where you can appreciate the lush flora and fauna"
       },
       {
         day: "3",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora soluta itaque delectus iusto maiores nihil nobis? Quasi officiis quo provident ab in laborum nobis ullam porro, a qui vero dolores aut? Sunt deserunt sit expedita sapiente iusto repellendus voluptatem ipsam, recusandae magni culpa provident porro a odio facilis aut praesentium libero dolorem? Magni perferendis quaerat necessitatibus, recusandae repellat modi quidem cupiditate tempore sit eum iure sint nulla qui possimus odit dignissimos illo adipisci explicabo quia harum vero dolore deleniti eveniet molestiae? Voluptatem quam quae laborum at tenetur officiis id adipisci ad aspernatur a sequi soluta quia eos nihil voluptatum iusto, quod vero, fuga placeat totam asperiores, quasi dolores aliquam? Ex quos, et iste praesentium eum aut ut quibusdam sit doloremque nam exercitationem veritatis enim inventore, odit sed hic aliquam ea. Quibusdam iure necessitatibus quos corrupti dignissimos. Quis eveniet nam facilis. Neque ea ipsam a quia ullam repudiandae, distinctio molestiae voluptate doloribus quod consequatur vel ducimus sit nam iusto nemo? Qui quaerat cupiditate sapiente cumque corporis expedita placeat. Tenetur eligendi possimus error dolor illo sit repudiandae minus consequatur laboriosam natus velit, id earum animi ipsa aperiam quis consequuntur quas odio asperiores? Vel excepturi cumque amet quae dignissimos ducimus sint laboriosam! Explicabo.",
+        desc: "Ascend to the Bahirawakanda Vihara Buddha Statue for panoramic views of the city, then delve into Sri Lanka’s tea culture at the Ceylon Tea Museum with a delightful tea tasting experience."
       },
       {
         day: "4",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora soluta itaque delectus iusto maiores nihil nobis? Quasi officiis quo provident ab in laborum nobis ullam porro, a qui vero dolores aut? Sunt deserunt sit expedita sapiente iusto repellendus voluptatem ipsam, recusandae magni culpa provident porro a odio facilis aut praesentium libero dolorem? Magni perferendis quaerat necessitatibus, recusandae repellat modi quidem cupiditate tempore sit eum iure sint nulla qui possimus odit dignissimos illo adipisci explicabo quia harum vero dolore deleniti eveniet molestiae? Voluptatem quam quae laborum at tenetur officiis id adipisci ad aspernatur a sequi soluta quia eos nihil voluptatum iusto, quod vero, fuga placeat totam asperiores, quasi dolores aliquam? Ex quos, et iste praesentium eum aut ut quibusdam sit doloremque nam exercitationem veritatis enim inventore, odit sed hic aliquam ea. Quibusdam iure necessitatibus quos corrupti dignissimos. Quis eveniet nam facilis. Neque ea ipsam a quia ullam repudiandae, distinctio molestiae voluptate doloribus quod consequatur vel ducimus sit nam iusto nemo? Qui quaerat cupiditate sapiente cumque corporis expedita placeat. Tenetur eligendi possimus error dolor illo sit repudiandae minus consequatur laboriosam natus velit, id earum animi ipsa aperiam quis consequuntur quas odio asperiores? Vel excepturi cumque amet quae dignissimos ducimus sint laboriosam! Explicabo.",
+        desc: "An exhilarating day trip to Sigiriya, where you’ll explore the ancient rock fortress and the nearby Dambulla Cave Temple, adorned with impressive Buddha statues."
       },
       {
         day: "5",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora soluta itaque delectus iusto maiores nihil nobis? Quasi officiis quo provident ab in laborum nobis ullam porro, a qui vero dolores aut? Sunt deserunt sit expedita sapiente iusto repellendus voluptatem ipsam, recusandae magni culpa provident porro a odio facilis aut praesentium libero dolorem? Magni perferendis quaerat necessitatibus, recusandae repellat modi quidem cupiditate tempore sit eum iure sint nulla qui possimus odit dignissimos illo adipisci explicabo quia harum vero dolore deleniti eveniet molestiae? Voluptatem quam quae laborum at tenetur officiis id adipisci ad aspernatur a sequi soluta quia eos nihil voluptatum iusto, quod vero, fuga placeat totam asperiores, quasi dolores aliquam? Ex quos, et iste praesentium eum aut ut quibusdam sit doloremque nam exercitationem veritatis enim inventore, odit sed hic aliquam ea. Quibusdam iure necessitatibus quos corrupti dignissimos. Quis eveniet nam facilis. Neque ea ipsam a quia ullam repudiandae, distinctio molestiae voluptate doloribus quod consequatur vel ducimus sit nam iusto nemo? Qui quaerat cupiditate sapiente cumque corporis expedita placeat. Tenetur eligendi possimus error dolor illo sit repudiandae minus consequatur laboriosam natus velit, id earum animi ipsa aperiam quis consequuntur quas odio asperiores? Vel excepturi cumque amet quae dignissimos ducimus sint laboriosam! Explicabo.",
+        desc: "Last day, wander through local markets for some shopping and try a cooking class to learn how to prepare traditional Sri Lankan dishes. As you prepare for departure, take a moment to enjoy one last stroll around Kandy Lake or relax at a café, reflecting on your unforgettable adventure in this cultural gem."
       },
     ],
     inclusions: [
-      "Lorem ipsum dolor sit amet consectetur adipisicing",
-      "Lorem ipsum dolor sit amet consectetur ",
-      "Lorem ipsum dolor sit amet consectetur adipisicing",
+      "Accommodation: 4 nights in a hotel or guesthouse in Kandy (breakfast included)",
+      "One traditional dinner",
+      "Lunch during the day trip to Sigiriya (optional)",
+      "One cooking class",
+      "One cultural show",
+      "Transportation: Private vehicle with driver for the entire duration",
     ],
     exclusions: [
-      "Lorem ipsum dolor sit amet consectetur adipisicing",
-      "Lorem ipsum dolor sit amet consectetur ",
-      "Lorem ipsum dolor sit amet consectetur adipisicing",
+      "International Flights: Airfare to and from Sri Lank",
+      "Visa fees",
+      "Travel insurance",
+      "Personal expenses",
+      
     ],
   },
 ];

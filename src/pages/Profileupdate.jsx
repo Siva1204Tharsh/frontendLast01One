@@ -128,14 +128,14 @@ const Profileupdate = () => {
               alt=""
             />
           </div>
-          <div className="text-center mx-6 pt-3">
+          {/* <div className="text-center mx-6 pt-3">
             <h1 className="text-lg">Available Points</h1>
             <h3 className="text-blue-500 font-bold">1500</h3>
           </div>
           <div className="text-center">
             <h1 className="text-lg">Account Status</h1>
             <h3 className="text-blue-500 font-bold">Blue</h3>
-          </div>
+          </div> */}
         </div>
         <div className="flex flex-col justify-center items-center gap-5 rounded-lg bg-white p-6 ">
           <form onSubmit={handleSubmit} className="flex flex-col gap-2">

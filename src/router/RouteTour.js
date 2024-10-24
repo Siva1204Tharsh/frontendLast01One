@@ -47,6 +47,9 @@ import HotelBook from "../pages/hotel/HotelBook";
 import ResetPassword from "../pages/ResetPassword";
 import Tourreservations from "../pages/Tourreservations";
 
+import GuideChatApp from "../pages/Tour/Admin/GuideChatApp.jsx";
+import Chatbot from '../pages/Chatbot.jsx';
+
 import { Main } from "../pages/Main";
 
 
@@ -103,7 +106,7 @@ const RouteTour = () => {
         }
       />
       <Route
-        path="/tourreservation/all"
+        path="/tourreservation"
         element={
           <ProtectedRoute>
             <Tourreservations columns={tourReservationColumns} />
@@ -152,6 +155,11 @@ const RouteTour = () => {
       <Route path="/hoteladmin" element={<HadminView />} />
       <Route path="/hotelreserve/:id" element={<HotelReserve />} />
       <Route path="/hotelbooking" element={<HotelBook />} />
+
+      {/* rout chat admin */}
+      <Route path="/guideChatApp" element={<GuideChatApp />} />
+      <Route path="/chatbot" element={<Chatbot />} />
+
 
       <Route path="/finance" element={<Main />} />
 

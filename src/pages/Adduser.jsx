@@ -99,13 +99,7 @@ const Adduser = () => {
           navigate("/users");
         } else {
           const response = await axios.post("auth/register", {
-            name,
-            email,
-            mobile,
-            country,
-            type,
-            isAdmin,
-            password,
+           
           });
           Swal.fire("Done! Account registered!", "", "success");
           navigate("/users");
