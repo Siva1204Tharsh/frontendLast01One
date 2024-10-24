@@ -16,6 +16,7 @@ const Home = () => {
       <Hero3 />
       <Aboutus />
       <Services />
+
     </div>
   );
 };

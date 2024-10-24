@@ -7,6 +7,8 @@ export default function App() {
   return (
     <BrowserRouter>
       <Layout />
+      
     </BrowserRouter>
+    
   );
 }
